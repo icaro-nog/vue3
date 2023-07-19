@@ -12,7 +12,7 @@
             <button @click="showEmail">{{ texto_botao }}</button>
         </div>
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
-        <p>Acesse meu portfolio neste link: <a v-bind:href="meu_link" target="_blank">link</a> </p>
+        <p class="paragrafo_email">Acesse meu portfolio neste link: <a v-bind:href="meu_link" target="_blank">link</a> </p>
         <Picture />
     </div>
 </template>
