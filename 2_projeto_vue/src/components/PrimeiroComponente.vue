@@ -1,9 +1,17 @@
 <template>
-  <h1>Olá Vue!</h1>
+  <div>
+    <h1>Olá Vue!</h1>
+    <MultiplosEventos />
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'PrimeiroComponente',
-}
+  import MultiplosEventos from './MultiplosEventos.vue';
+
+  export default {
+    name: 'PrimeiroComponente',
+    components: {
+      MultiplosEventos
+    }
+  }
 </script>
