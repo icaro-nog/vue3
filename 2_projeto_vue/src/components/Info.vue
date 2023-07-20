@@ -15,16 +15,19 @@
         </div>
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
         <p class="paragrafo_email">Acesse meu portfolio neste link: <a v-bind:href="meu_link" target="_blank">link</a> </p>
+        <Form />
         <Picture />
     </div>
 </template>
 <script>
     import Picture from './Picture.vue';
+    import Form from './Form.vue';
 
     export default {
         name: 'Info',
         components: {
-            Picture
+            Picture,
+            Form
         },
         data() {
             return { 
